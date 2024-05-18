@@ -1,0 +1,422 @@
+Fecha y Hora: Thu May 16 01:33:25 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		
+|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	
+|| Edad: 1                    ||	
+|| Departamento: qwe          ||	
+|| Email: qwe                 ||	
+|| Telefono: 1                ||	
+===============================		
+
+Fecha y Hora: Thu May 16 01:33:31 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	
+|| Edad: 1                    ||	|| Edad: 2                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	
+|| Telefono: 1                ||	|| Telefono: 2                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 01:33:38 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: zxc                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: zxc              ||	
+|| Edad: 1                    ||	|| Edad: 2                    ||	|| Edad: 3                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: zxc          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: zxc                 ||	
+|| Telefono: 1                ||	|| Telefono: 2                ||	|| Telefono: 3                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 01:33:41 2024
+Operacion: Eliminacion de Datos - DEQUEUE
+
+===============================		===============================		
+|| Nombre: asd                ||	|| Nombre: zxc                ||	
+|| Apellido: asd              ||	|| Apellido: zxc              ||	
+|| Edad: 2                    ||	|| Edad: 3                    ||	
+|| Departamento: asd          ||	|| Departamento: zxc          ||	
+|| Email: asd                 ||	|| Email: zxc                 ||	
+|| Telefono: 2                ||	|| Telefono: 3                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 01:33:54 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: asd                ||	|| Nombre: zxc                ||	|| Nombre: tyu                ||	
+|| Apellido: asd              ||	|| Apellido: zxc              ||	|| Apellido: tyu              ||	
+|| Edad: 2                    ||	|| Edad: 3                    ||	|| Edad: 4                    ||	
+|| Departamento: asd          ||	|| Departamento: zxc          ||	|| Departamento: tyu          ||	
+|| Email: asd                 ||	|| Email: zxc                 ||	|| Email: tyu                 ||	
+|| Telefono: 2                ||	|| Telefono: 3                ||	|| Telefono: 4                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 01:34:04 2024
+Operacion: Vaciado de Datos
+
+
+
+
+
+
+
+
+
+
+Fecha y Hora: Thu May 16 02:10:12 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		
+|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	
+|| Edad: 1                    ||	
+|| Departamento: qwe          ||	
+|| Email: qwe                 ||	
+|| Telefono: 1                ||	
+===============================		
+
+Fecha y Hora: Thu May 16 02:10:21 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	
+|| Edad: 1                    ||	|| Edad: 2                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	
+|| Telefono: 1                ||	|| Telefono: 2                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:10:43 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: zxc                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: zxc              ||	
+|| Edad: 1                    ||	|| Edad: 2                    ||	|| Edad: 3                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: zxc          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: zxc                 ||	
+|| Telefono: 1                ||	|| Telefono: 2                ||	|| Telefono: 3                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:10:52 2024
+Operacion: Eliminacion de Datos - DEQUEUE
+
+===============================		===============================		
+|| Nombre: asd                ||	|| Nombre: zxc                ||	
+|| Apellido: asd              ||	|| Apellido: zxc              ||	
+|| Edad: 2                    ||	|| Edad: 3                    ||	
+|| Departamento: asd          ||	|| Departamento: zxc          ||	
+|| Email: asd                 ||	|| Email: zxc                 ||	
+|| Telefono: 2                ||	|| Telefono: 3                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:11:03 2024
+Operacion: Vaciado de Datos
+
+
+
+
+
+
+
+
+
+
+Fecha y Hora: Thu May 16 02:15:07 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		
+|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	
+|| Edad: 1                    ||	
+|| Departamento: qwe          ||	
+|| Email: qwe                 ||	
+|| Telefono: 1                ||	
+===============================		
+
+Fecha y Hora: Thu May 16 02:15:15 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	
+|| Edad: 1                    ||	|| Edad: 2                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	
+|| Telefono: 1                ||	|| Telefono: 2                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:15:22 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: zxc                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: zxc              ||	
+|| Edad: 1                    ||	|| Edad: 2                    ||	|| Edad: 2                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: zxc          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: zxc                 ||	
+|| Telefono: 1                ||	|| Telefono: 2                ||	|| Telefono: 3                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:16:35 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		
+|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	
+|| Edad: 1                    ||	
+|| Departamento: qwe          ||	
+|| Email: qwe                 ||	
+|| Telefono: 1                ||	
+===============================		
+
+Fecha y Hora: Thu May 16 02:16:40 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	|| Apellido: qwe              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: qwe          ||	|| Departamento: qw           ||	
+|| Email: qwe                 ||	|| Email: eqwe                ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:16:46 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: qwe                ||	|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	|| Apellido: qwe              ||	|| Apellido: qwe              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: qwe          ||	|| Departamento: qw           ||	|| Departamento: qwe          ||	
+|| Email: qwe                 ||	|| Email: eqwe                ||	|| Email: qwe                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:18:12 2024
+Operacion: Ingreso de Datos - PUSH
+
+  ----- FIN DE LA PILA -----  
+================================
+|| Nombre: qwe                ||
+|| Apellido: qwe              ||
+|| Edad: 0                    ||
+|| Carrera:                   ||
+|| Email:                     ||
+|| Telefono: -842150451       ||
+================================
+----- INICIO DE LA PILA ----- 
+
+Fecha y Hora: Thu May 16 02:18:17 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		
+|| Nombre:                    ||	
+|| Apellido:                  ||	
+|| Edad: -842150451           ||	
+|| Departamento:              ||	
+|| Email:                     ||	
+|| Telefono: -842150451       ||	
+===============================		
+
+Fecha y Hora: Thu May 16 02:18:20 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		
+|| Nombre:                    ||	|| Nombre:                    ||	
+|| Apellido:                  ||	|| Apellido:                  ||	
+|| Edad: -842150451           ||	|| Edad: -842150451           ||	
+|| Departamento:              ||	|| Departamento:              ||	
+|| Email:                     ||	|| Email:                     ||	
+|| Telefono: -842150451       ||	|| Telefono: -842150451       ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:18:32 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		
+|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	
+|| Edad: 1                    ||	
+|| Departamento: qwe          ||	
+|| Email: qwe                 ||	
+|| Telefono: 1                ||	
+===============================		
+
+Fecha y Hora: Thu May 16 02:18:38 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	|| Apellido: qwe              ||	
+|| Edad: 1                    ||	|| Edad: 2                    ||	
+|| Departamento: qwe          ||	|| Departamento: qwe          ||	
+|| Email: qwe                 ||	|| Email: qwe                 ||	
+|| Telefono: 1                ||	|| Telefono: 2                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:18:44 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: qwe                ||	|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	|| Apellido: qwe              ||	|| Apellido: qwe              ||	
+|| Edad: 1                    ||	|| Edad: 2                    ||	|| Edad: 3                    ||	
+|| Departamento: qwe          ||	|| Departamento: qwe          ||	|| Departamento: qwe          ||	
+|| Email: qwe                 ||	|| Email: qwe                 ||	|| Email: qwe                 ||	
+|| Telefono: 1                ||	|| Telefono: 2                ||	|| Telefono: 3                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:19:47 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		
+|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	
+|| Edad: 1                    ||	
+|| Departamento: qwe          ||	
+|| Email: qwe                 ||	
+|| Telefono: 1                ||	
+===============================		
+
+Fecha y Hora: Thu May 16 02:19:52 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:19:58 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: wer                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: wer              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: wer          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: wer                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:20:14 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: wer                ||	|| Nombre: zxc                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: wer              ||	|| Apellido: zxc              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: wer          ||	|| Departamento: zxc          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: wer                 ||	|| Email: zxc                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:20:22 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: wer                ||	|| Nombre: zxc                ||	|| Nombre: ghj                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: wer              ||	|| Apellido: zxc              ||	|| Apellido: ghj              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: wer          ||	|| Departamento: zxc          ||	|| Departamento: ghj          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: wer                 ||	|| Email: zxc                 ||	|| Email: ghj                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:23:06 2024
+Operacion: Eliminacion de Datos - DEQUEUE
+
+===============================		===============================		===============================		===============================		
+|| Nombre: asd                ||	|| Nombre: wer                ||	|| Nombre: zxc                ||	|| Nombre: ghj                ||	
+|| Apellido: asd              ||	|| Apellido: wer              ||	|| Apellido: zxc              ||	|| Apellido: ghj              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: asd          ||	|| Departamento: wer          ||	|| Departamento: zxc          ||	|| Departamento: ghj          ||	
+|| Email: asd                 ||	|| Email: wer                 ||	|| Email: zxc                 ||	|| Email: ghj                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:23:13 2024
+Operacion: Eliminacion de Datos - DEQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: wer                ||	|| Nombre: zxc                ||	|| Nombre: ghj                ||	
+|| Apellido: wer              ||	|| Apellido: zxc              ||	|| Apellido: ghj              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: wer          ||	|| Departamento: zxc          ||	|| Departamento: ghj          ||	
+|| Email: wer                 ||	|| Email: zxc                 ||	|| Email: ghj                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:27:40 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		
+|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	
+|| Edad: 1                    ||	
+|| Departamento: qwe          ||	
+|| Email: qwe                 ||	
+|| Telefono: 1                ||	
+===============================		
+
+Fecha y Hora: Thu May 16 02:27:53 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:28:02 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: zxc                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: zxc              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: zxc          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: zxc                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	
+===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:28:10 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: zxc                ||	|| Nombre: qwe                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: zxc              ||	|| Apellido: qwe              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 2                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: zxc          ||	|| Departamento: qwe          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: zxc                 ||	|| Email: qwe                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 2                ||	
+===============================		===============================		===============================		===============================		
+
+Fecha y Hora: Thu May 16 02:28:20 2024
+Operacion: Ingreso de Datos - ENQUEUE
+
+===============================		===============================		===============================		===============================		===============================		
+|| Nombre: qwe                ||	|| Nombre: asd                ||	|| Nombre: zxc                ||	|| Nombre: qwe                ||	|| Nombre: ert                ||	
+|| Apellido: qwe              ||	|| Apellido: asd              ||	|| Apellido: zxc              ||	|| Apellido: qwe              ||	|| Apellido: ert              ||	
+|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 1                    ||	|| Edad: 2                    ||	|| Edad: 2                    ||	
+|| Departamento: qwe          ||	|| Departamento: asd          ||	|| Departamento: zxc          ||	|| Departamento: qwe          ||	|| Departamento: ert          ||	
+|| Email: qwe                 ||	|| Email: asd                 ||	|| Email: zxc                 ||	|| Email: qwe                 ||	|| Email: ert                 ||	
+|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 1                ||	|| Telefono: 2                ||	|| Telefono: 2                ||	
+===============================		===============================		===============================		===============================		===============================		
+
