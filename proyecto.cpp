@@ -76,6 +76,12 @@ POR HACER ALTA PRIORIDAD
 - Hacer que al volver a entrar al programa, identifique si hay un archivo "backup"
 - Hacer que pida al usuario si desea cargar los datos desde el archivo "backup"
   caso contrario eliminar el contenido del archivo y eliminar el historial.
+- Hacer que al mostrar los datos de la pila, cola y lista, se muestre solamente el nombre,
+    luego se le pregunta al usuario que datos desea ver de forma completa.
+- Quizá hacer que se guarden los datos de forma resumida en un documento y de forma completa en otro.
+    Si el usuario desea ver de forma detallada, entonces se abre el documento con el editor de texto del sistema.
+- Mostrar los datos sin tener que escribir el nombre de la variable.
+- Otra opcion es hacer que se muestre de forma completa los nodos y en otra opcion escribir solo el nombre y luego las direcciones de memoria.
 
 POR HACER BAJA PRIORIDAD
 - En el historial, debajo de la fecha y operacion mostrar el nodo ingresado o eliminado
@@ -104,6 +110,7 @@ BUGS SOLUCIONADOS
 #include <conio.h>			// Para usar la función _getch() y menu interactivo
 using namespace std;
 
+// Struct que usaremos en la PILA y COLA
 // Definición de la estructura para el ingreso de datos del estudiante
 struct Estudiante {
     string nombre;
@@ -112,6 +119,15 @@ struct Estudiante {
     string email;
     int edad;
     long telefono;
+};
+
+struct Servicios {
+    string nombre;
+    string ubicacion;
+    string horario;
+    string contacto;
+    string descripcion;
+    bool disponible;
 };
 
 // Definición de la estructura para los nodos de la Cola (Profesores)
@@ -136,12 +152,12 @@ struct NodoCola {
     NodoCola* siguiente;
 };
 
-// Nodo para la Lista Doblemente Enlazada   PROXIMAMENTE
-//struct NodoLista {
-//    Estudiante estudiante;
-//    NodoLista* siguiente;
-//    NodoLista* anterior;
-//};
+// Nodo para la Lista Doblemente Enlazada en ordenamiento natural   PROXIMAMENTE
+struct NodoLista {
+    Servicios servicios;
+    NodoLista* siguiente;
+    NodoLista* anterior;
+};
 
 // Funciones Prototipo Generales
 // Función para centrar texto
@@ -150,6 +166,8 @@ string centrarTexto(const string& texto, int anchoCampo);
 void historialPila(NodoPila* top, const string& tipoEscritura);
 // Función para guardar el historial de operaciones de la Cola
 void historialCola(NodoCola* frente, NodoCola* final, const string& tipoEscritura);
+// Función para guardar el historial de operaciones de la Lista
+void historialLista(NodoLista* inicio, NodoLista* final, const string& tipoEscritura);
 // Función para mostrar el historial de operaciones de la Pila y Cola
 void mostrarHistorial();
 // Funcion para mostrar una animación de entrada
@@ -182,6 +200,21 @@ void vaciarProfesores(NodoCola*& frente, NodoCola*& final);
 // Funcion para mostrar el menú de la Cola
 void menuCola(NodoCola*& frente, NodoCola*& final);
 
+// Fciones Prototipo de la Lista Doblemente Enlazada con ordenamiento de forma natural
+// Funcion para ingresar un servicio a la Lista
+void ingresarServicios(NodoLista*& inicio, NodoLista*& final);
+// Funcion para mostrar los datos de todos los servicios de forma resumida
+void mostrarServiciosResumido(NodoLista* inicio, NodoLista* final);
+// Funcion para mostrar los datos de todos los servicios
+void mostrarServicios(NodoLista* inicio, NodoLista* final);
+// Funcion para eliminar el primer servicio de la Lista
+void eliminarServicios(NodoLista*& inicio, NodoLista*& final);
+// Funcion para vaciar la Lista
+void vaciarServicios(NodoLista*& inicio, NodoLista*& final);
+// Funcion para mostrar el menú de la Lista
+void menuLista(NodoLista*& inicio, NodoLista*& final);
+
+
 // Menú principal
 int main() {
     animacionEntrada(); // Mostrar la animación de entrada
@@ -191,6 +224,8 @@ int main() {
     NodoPila* pilaEstudiantes = NULL;
     NodoCola* frente = NULL;
     NodoCola* final = NULL;
+    NodoLista* inicio = NULL;
+    NodoLista* finalLista = NULL;
 
     int opcion = 0;
     int tecla;
@@ -224,8 +259,7 @@ int main() {
                 menuCola(frente, final);
                 break;
             case 2:
-                cout << "La opción 3: Servicios de la Universidad (LISTA DOBLE. ENLAZADA) aún no está implementada." << endl;
-                _getch(); // Esperar a que el usuario presione una tecla antes de continuar
+                menuLista(inicio, finalLista);
                 break;
             case 3:
                 mostrarHistorial();
@@ -394,6 +428,8 @@ void mostrarHistorial() {
             cout << linea << endl;
         }
         archivo.close(); // Cerrar el archivo
+
+        system("pause"); // Pausar la pantalla
     }
     else {
         cout << "Error al abrir el archivo de historial de operaciones." << endl;
@@ -879,4 +915,268 @@ void menuCola(NodoCola*& frente, NodoCola*& final) {
             break;
         }
     } while (tecla != 13 || opcion != 4); // Salir si se presiona Enter en la opción 5
+}
+
+// ########################## LISTA ##################################
+
+void ingresarServicios(NodoLista*& inicio, NodoLista*& final) {
+	// Reservar memoria para un nuevo nodo
+	NodoLista* nuevo = new NodoLista;
+
+	system("cls"); // Limpiar la pantalla
+	cout << "###### INGRESO DE DATOS DEL SERVICIO ######" << endl << endl;
+
+	cout << "Nombre: ";
+	cin >> nuevo->servicios.nombre;
+	cout << "Ubicacion: ";
+	cin >> nuevo->servicios.ubicacion;
+	cout << "Horario: ";
+	cin >> nuevo->servicios.horario;
+	cout << "Contacto: ";
+	cin >> nuevo->servicios.contacto;
+	cout << "Descripcion: ";
+	cin >> nuevo->servicios.descripcion;
+	cout << "Disponible (1-Si, 0-No): ";
+	cin >> nuevo->servicios.disponible;
+
+	// Enlazar el nuevo nodo con el nodo superior
+	nuevo->siguiente = NULL;
+	nuevo->anterior = NULL;
+
+	// El nuevo nodo se convierte en el nodo superior
+    if (inicio == NULL) {
+		inicio = nuevo;
+	}
+	// Si la lista no está vacía
+    else {
+		final->siguiente = nuevo;
+		nuevo->anterior = final;
+	}
+
+	// El nuevo nodo se convierte en el nodo final
+	final = nuevo;
+
+	Sleep(1000); // Esperar 1 segundo
+	cout << "Servicio ingresado con EXITO." << endl;
+}
+
+void mostrarServiciosResumido(NodoLista* inicio, NodoLista* final) {
+	// Verificar si la lista está vacía
+    if (inicio == NULL) {
+		cout << endl;
+		cout << "La lista de servicios está vacia." << endl;
+		return;
+	}
+
+	cout << endl;
+
+	// Recorrer la lista
+	NodoLista* temp = inicio;
+
+	// Mientras no sea el final de la lista
+    while (temp != NULL) {
+		// Mostramos la dirección de memoria del nodo y los datos del servicio
+		cout << "DIRECCION DEL NODO: " << "\t| " << temp << endl;
+
+		cout << "Nombre: " << temp->servicios.nombre << " \t\t| " << &temp->servicios.nombre << endl;
+		cout << endl;
+
+		temp = temp->siguiente;
+	}
+
+	cout << "----- Fin de la Lista de Servicios -----" << endl;
+
+	system("pause"); // Pausar la pantalla
+}
+
+void mostrarServicios(NodoLista* inicio, NodoLista* final) {
+	// Verificar si la lista está vacía
+    if (inicio == NULL) {
+		cout << endl;
+		cout << "La lista de servicios está vacia." << endl;
+        system("pause"); // Pausar la pantalla
+		return;
+	}
+
+	cout << endl;
+
+	// Recorrer la lista
+	NodoLista* temp = inicio;
+
+	// Calcular el tamaño de la lista para determinar cuantos structs tenemos
+	int tamanoLista = 0;
+    while (temp != NULL) {
+		tamanoLista++;
+		temp = temp->siguiente;
+	}
+	temp = inicio;
+
+	// Asignamos memoria dinamica para almacenar las cadenas de cada struct
+	string** datos = new string * [tamanoLista];
+    for (int i = 0; i < tamanoLista; ++i) {
+		datos[i] = new string[6];
+	}
+
+	int indice = 0;
+    while (temp != NULL) {
+		datos[indice][0] = "|| Nombre: " + temp->servicios.nombre;
+		datos[indice][1] = "|| Ubicacion: " + temp->servicios.ubicacion;
+		datos[indice][2] = "|| Horario: " + temp->servicios.horario;
+		datos[indice][3] = "|| Contacto: " + temp->servicios.contacto;
+		datos[indice][4] = "|| Descripcion: " + temp->servicios.descripcion;
+        // Hacer que dependa de la variable bool, escriba si esta disponible o no
+        if (temp->servicios.disponible == 1) {
+			datos[indice][5] = "|| Disponible: Si";
+		}
+        else {
+			datos[indice][5] = "|| Disponible: No";
+		}
+		
+        temp = temp->siguiente;
+		indice++;
+	}
+
+	// Escribir las líneas horizontales para los structs
+    for (int i = 0; i < tamanoLista; ++i) {
+		cout << "====================================================" << "\t";
+	}
+	cout << endl;
+
+	// Escribir los datos de cada campo para todos los structs
+    for (int i = 0; i < 6; ++i) {
+        for (int j = 0; j < tamanoLista; ++j) {
+			cout << left << setw(30) << datos[j][i] << "\t| " << &datos[j][i] << "||\t";
+		}
+        cout << endl;
+    }
+
+
+    // Escribir las líneas horizontales para los structs
+    for (int i = 0; i < tamanoLista; ++i) {
+        cout << "====================================================" << "\t";
+    }
+    cout << endl << endl;
+
+    system("pause"); // Pausar la pantalla
+}
+
+void eliminarServicios(NodoLista*& inicio, NodoLista*& final) {
+    if (inicio != NULL) {
+		cout << "Eliminando el servicio: \t " << inicio->servicios.nombre << " ..." << endl;
+
+		// Guardar en una variable temporal el nodo a eliminar
+		NodoLista* temp = inicio;
+
+		// Si la lista tiene un solo nodo
+        if (inicio == final) {
+			// Reiniciar los punteros de la lista
+			inicio = NULL;
+			final = NULL;
+		}
+        else {
+			// Ahora el inicio de la lista es el siguiente nodo
+			inicio = inicio->siguiente;
+		}
+
+		// Liberar la memoria del nodo eliminado
+		delete temp;
+
+		Sleep(2000); // Esperar 2 segundo
+		cout << "Servicio eliminado con EXITO." << endl;
+	}
+    else {
+		cout << "La lista de servicios está vacia. No hay servicios para eliminar." << endl;
+        system("pause"); // Pausar la pantalla
+	}
+}
+
+void vaciarServicios(NodoLista*& inicio, NodoLista*& final) {
+	// Verificar si la lista está vacía
+    if (inicio != NULL) {
+		cout << "Vaciando la lista de servicios..." << endl;
+
+		// Mientras la lista no esté vacía
+        while (inicio != NULL) {
+			cout << "Eliminando el servicio: \t " << inicio->servicios.nombre << " ..." << endl;
+
+			// Guardar en una variable temporal el nodo a eliminar
+			NodoLista* temp = inicio;
+
+			// Si la lista tiene un solo nodo
+            if (inicio == final) {
+				// Reiniciar los punteros de la lista
+				inicio = NULL;
+				final = NULL;
+			}
+            else {
+				// Ahora el inicio de la lista es el siguiente nodo
+				inicio = inicio->siguiente;
+			}
+
+			// Liberar la memoria del nodo eliminado
+			delete temp;
+
+			Sleep(2000); // Esperar 2 segundo
+			cout << "Servicio eliminado con EXITO." << endl;
+		}
+
+		Sleep(2000); // Esperar 2 segundo
+		cout << "La lista de servicios ha sido vaciada con EXITO." << endl;
+
+		system("pause"); // Pausar la pantalla
+	}
+    else {
+		cout << "La lista de servicios ya esta vacia." << endl;
+        system("pause"); // Pausar la pantalla
+	}
+}
+
+void menuLista(NodoLista*& inicio, NodoLista*& final) {
+	int opcion = 0;
+	int tecla;
+    do {
+		system("cls"); // Limpiar la pantalla
+		cout << "----- Listado de Servicios -----" << endl << endl;
+		cout << (opcion == 0 ? "=> " : "   ") << "1- Ingresar datos de nuevo servicio" << endl;
+		cout << (opcion == 1 ? "=> " : "   ") << "2- Mostrar todos los servicios" << endl;
+		cout << (opcion == 2 ? "=> " : "   ") << "3- Eliminar el primer servicio ingresado" << endl;
+		cout << (opcion == 3 ? "=> " : "   ") << "4- Vaciar el listado" << endl;
+		cout << (opcion == 4 ? "=> " : "   ") << "5- Regresar al Menu Principal" << endl;
+
+        do {
+			tecla = _getch();
+		} while (tecla != 72 && tecla != 80 && tecla != 13);
+
+        switch (tecla) {
+		case 72: // Flecha arriba
+			opcion = (opcion > 0) ? opcion - 1 : 4;
+			break;
+		case 80: // Flecha abajo
+			opcion = (opcion < 4) ? opcion + 1 : 0;
+			break;
+		case 13: // Enter
+            switch (opcion) {
+			case 0:
+				ingresarServicios(inicio, final);
+				mostrarServiciosResumido(inicio, final); // Mostrar el listado de servicios después de ingresar los datos
+				break;
+			case 1:
+				mostrarServicios(inicio, final);
+				break;
+			case 2:
+				eliminarServicios(inicio, final);
+                mostrarServiciosResumido(inicio, final); // Mostrar el listado de servicios después de eliminar un servicio
+				break;
+			case 3:
+				vaciarServicios(inicio, final);
+                mostrarServiciosResumido(inicio, final); // Mostrar el listado de servicios después de vaciar la lista
+				break;
+			case 4:
+				break;
+			default:
+				cout << "Opcion invalida. Intente de nuevo." << endl;
+			}
+			break;
+		}
+	} while (tecla != 13 || opcion != 4); // Salir si se presiona Enter en la opción 5
 }
