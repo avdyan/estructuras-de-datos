@@ -1,3 +1,9 @@
 ﻿  proyecto.cpp
-C:\Users\avdyan\dev\proyecto\proyecto.cpp(287,18): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\avdyan\dev\proyecto\proyecto.cpp(254,22): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\avdyan\dev\proyecto\proyecto.cpp(583,38): warning C4101: 'e': variable local sin referencia
+C:\Users\avdyan\dev\proyecto\proyecto.cpp(729,22): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\avdyan\dev\proyecto\proyecto.cpp(833,33): warning C4101: 'e': variable local sin referencia
+C:\Users\avdyan\dev\proyecto\proyecto.cpp(1171,22): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\avdyan\dev\proyecto\proyecto.cpp(1286,33): warning C4101: 'e': variable local sin referencia
+C:\Users\avdyan\dev\proyecto\proyecto.cpp(1639,16): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
   proyecto.vcxproj -> C:\Users\avdyan\dev\proyecto\x64\Debug\proyecto.exe
